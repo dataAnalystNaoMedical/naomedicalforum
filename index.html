@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nao Medical Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="https://naomedical.com/wp-content/uploads/2023/07/naoMedicalLogo.svg" alt="Nao Medical Logo">
+                </a>
+                <form class="search-form">
+                    <input type="search" placeholder="Search articles..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/categories">Categories</a></li>
+                    <li><a href="/popular">Popular</a></li>
+                    <li><a href="/recent">Recent</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <aside class="sidebar">
+            <div class="card">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="/category/general-health">General Health</a></li>
+                    <li><a href="/category/medications">Medications</a></li>
+                    <li><a href="/category/treatments">Treatments</a></li>
+                    <li><a href="/category/lifestyle">Lifestyle</a></li>
+                    <li><a href="/category/mental-health">Mental Health</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Popular Posts</h2>
+                <ul>
+                    <li><a href="/post/1">Understanding Your Medication</a></li>
+                    <li><a href="/post/2">Tips for a Healthy Diet</a></li>
+                    <li><a href="/post/3">Managing Stress and Anxiety</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <article class="card">
+                <h1>Understanding Your Medication: A Comprehensive Guide</h1>
+                <div class="meta">Posted by Admin on May 15, 2023 | Last updated: May 20, 2023</div>
+                <div class="content">
+                    <p>Understanding your medication is crucial for managing your health effectively. This comprehensive guide will help you navigate the complexities of your prescribed medications, ensuring you get the most benefit while minimizing potential risks.</p>
+                    <h2>1. Know Your Medications</h2>
+                    <p>Make a list of all the medications you're taking, including over-the-counter drugs and supplements. For each medication, note:</p>
+                    <ul>
+                        <li>The name (both brand name and generic)</li>
+                        <li>The dosage</li>
+                        <li>How often you take it</li>
+                        <li>Why you're taking it</li>
+                        <li>Any special instructions (e.g., take with food)</li>
+                    </ul>
+                    <h2>2. Understand Potential Side Effects</h2>
+                    <p>All medications can have side effects. It's important to:</p>
+                    <ul>
+                        <li>Read the information leaflet that comes with your medication</li>
+                        <li>Discuss potential side effects with your healthcare provider</li>
+                        <li>Know which side effects are normal and which require immediate medical attention</li>
+                    </ul>
+                    <h2>3. Follow Instructions Carefully</h2>
+                    <p>Take your medications exactly as prescribed. This includes:</p>
+                    <ul>
+                        <li>Taking the correct dose</li>
+                        <li>Taking medication at the right time of day</li>
+                        <li>Following any special instructions (e.g., take on an empty stomach)</li>
+                        <li>Completing the full course of treatment, even if you feel better</li>
+                    </ul>
+                    <p>Remember, your healthcare provider and pharmacist are valuable resources. Don't hesitate to ask questions or voice concerns about your medications. Stay informed and take an active role in your health management!</p>
+                </div>
+            </article>
+
+            <section class="card comments">
+                <h2>Comments</h2>
+                <form id="comment-form">
+                    <textarea placeholder="Leave a comment..." required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+                <div id="comments-list">
+                    <!-- Comments will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nao Medical</h3>
+                    <p>Empowering patients with knowledge and community support.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2023 Nao Medical. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="feedback-button" class="feedback-button">Give Feedback</button>
+
+    <div id="feedback-popup" class="feedback-popup">
+        <div class="feedback-content card">
+            <h2>We Value Your Feedback</h2>
+            <form id="feedback-form">
+                <div class="feedback-step" data-step="1">
+                    <h3>How helpful was this article?</h3>
+                    <div class="radio-group">
+                        <label><input type="radio" name="helpful" value="1"> Not helpful</label>
+                        <label><input type="radio" name="helpful" value="2"> Somewhat helpful</label>
+                        <label><input type="radio" name="helpful" value="3"> Very helpful</label>
+                        <label><input type="radio" name="helpful" value="4"> Extremely helpful</label>
+                    </div>
+                </div>
+                <div class="feedback-step" data-step="2">
+                    <h3>How easy was it to understand the information?</h3>
+                    <div class="radio-group">
+                        <label><input type="radio" name="understand" value="1"> Very difficult</label>
+                        <label><input type="radio" name="understand" value="2"> Somewhat difficult</label>
+                        <label><input type="radio" name="understand" value="3"> Easy</label>
+                        <label><input type="radio" name="understand" value="4"> Very easy</label>
+                    </div>
+                </div>
+                <div class="feedback-step" data-step="3">
+                    <h3>Would you recommend this article to others?</h3>
+                    <div class="radio-group">
+                        <label><input type="radio" name="recommend" value="1"> Definitely not</label>
+                        <label><input type="radio" name="recommend" value="2"> Probably not</label>
+                        <label><input type="radio" name="recommend" value="3"> Probably yes</label>
+                        <label><input type="radio" name="recommend" value="4"> Definitely yes</label>
+                    </div>
+                </div>
+                <div class="feedback-step" data-step="4">
+                    <h3>Any additional comments?</h3>
+                    <textarea placeholder="Your feedback helps us improve..."></textarea>
+                </div>
+                <div class="feedback-navigation">
+                    <button type="button" id="feedback-prev" class="button-secondary">Back</button>
+                    <button type="button" id="feedback-next">Next</button>
+                    <button type="submit" id="feedback-submit" style="display: none;">Submit Feedback</button>
+                </div>
+            </form>
+            <button id="feedback-close" class="feedback-close">&times;</button>
+        </div>
+    </div>
+</body>
+</html>
+
